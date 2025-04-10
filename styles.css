@@ -1,0 +1,387 @@
+.navbar {
+    background: white;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Cursive', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #2c3e50;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+.nav-link:hover {
+    color: #1d3b2a;
+}
+
+.login-btn {
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.login-btn i {
+    margin-right: 5px;
+}
+
+main {
+    padding: 0 112px;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.banner-container .banner {
+    position: absolute;
+    top: 0;
+    left: 170px;
+    width: 470px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.overlay button {
+    font-size: 16px;
+    padding: 15px 30px;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'YourChosenFont', serif;
+}
+
+.overlay button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 0 170px;
+}
+
+.image-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 470px;
+    height: 616px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-button-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 118px 48px;
+}
+
+.text-button-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-button-section p {
+    margin-bottom: 20px;
+}
+
+h2, .read-more-btn {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    font-size: 16px;
+    margin-bottom: 70px;
+    padding: 15px 30px;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Playfair Display', serif;
+}
+
+.read-more-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.second-image-section {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 450px;
+    height: 299px;
+    margin-bottom: -60px;
+}
+
+.second-image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navbar-nav .d-flex a:hover {
+    color: #1d3b2a;
+}
+
+.bottom-section {
+    background-color: #c9d8bf;
+    width: 100%;
+    height: 600px; /* Set a fixed height */
+    background-size: cover;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the bottom */
+}
+
+.dietitian-counseling-section {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 20px; /* Add some space before the bottom */
+}
+
+.dietitian-counseling-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.counseling-block {
+    display: flex;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 798px;
+    height: 288px;
+    margin: 0 auto 30px;
+}
+
+.counseling-info {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.counseling-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.counseling-info p {
+    margin-bottom: 8px;
+}
+
+.book-now-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.counseling-image {
+    flex: 1;
+}
+
+.counseling-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.all-sessions-btn {
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 40px; /* Add bottom margin */
+}
+
+.content-container {
+    /* Your original content-container styles remain unchanged */
+}
+
+.cloned-content-container {
+    /* Styles for the cloned content-container */
+    width: 100%; /* Adjust as needed */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 40px auto; /* Adjust as needed */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 170px;
+}
+
+.cloned-content-container .image-section img {
+    width: 490px;
+    height: 535px;
+}
+
+.cloned-content-container .second-image-block {
+    width: 400px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+}
+
+cloned-content-container .second-image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cloned-content-container .post-content {
+    padding: 20px;
+}
+
+cloned-content-container .post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+cloned-content-container .post-content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+cloned-content-container .post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #888;
+}
+
+.footer {
+    background-color: #1d3b2a;
+    color: white;
+    height: 221px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column; /* Stack social icons and links */
+    align-items: flex-end; /* Align to the right */
+  }
+
+  .social-icons {
+    display: flex;
+    margin-bottom: 15px; /* Add space between icons and links */
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .footer-links {
+    display: flex;
+  }
+
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
